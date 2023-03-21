@@ -1,5 +1,5 @@
 <template>
-    <h1>All Coffees</h1>
+    <h1>Coffees</h1>
 </template>
 
 <script>
