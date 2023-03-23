@@ -8,7 +8,6 @@
                 <h1>{{ post.coffeeName }}</h1>
             </router-link>
             <!-- Move this to show page later -->
-            <input type="checkbox" v-model="post.completed">
         </div>
     </div>
 </template>

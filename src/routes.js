@@ -11,4 +11,7 @@ export default [
     {path: "/new/", component: FormPage},
     // Update Route
     {path: "/edit/", component: FormPage},
+
+    {path: "/delete/", component: FormPage},
+    
 ]
