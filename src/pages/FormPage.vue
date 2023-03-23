@@ -44,7 +44,7 @@
                 console.log(post._id)
                 buttonLabel = "Edit Coffee"
                 handleSubmit = async() => {
-                    await fetch(url.value + post.id + "/", {
+                    await fetch(url.value + post._id + "/", {
                         method: "put",
                         headers: {
                             "Content-Type": "application/json",
