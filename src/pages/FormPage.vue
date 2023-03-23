@@ -32,7 +32,9 @@
 
             let buttonLabel
             let handleSubmit
-            if (route.path === "/edit/") {
+
+
+            if (route.path === "/edit") {
                 const post = posts.value.find((p) => p.id == route.params.id)
                 coffeeName.value = post.coffeeName
                 typeOfCoffee.value = post.typeOfCoffee
@@ -42,7 +44,7 @@
                 console.log(post._id)
                 buttonLabel = "Edit Coffee"
                 handleSubmit = async() => {
-                    await fetch(url.value + post._id + "/", {
+                    await fetch(url.value + post.id + "/", {
                         method: "put",
                         headers: {
                             "Content-Type": "application/json",
