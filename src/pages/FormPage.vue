@@ -35,7 +35,7 @@
 
 
             if (route.path === "/edit") {
-                const post = posts.value.find((p) => p.id == route.params.id)
+                const post = posts.value.find((p) => p.id === route.params.id)
                 coffeeName.value = post.coffeeName
                 typeOfCoffee.value = post.typeOfCoffee
                 hotIce.value = post.hotIce
