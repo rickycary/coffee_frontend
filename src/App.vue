@@ -42,5 +42,9 @@ export default {
 </script>
 
 <style>
+.app {
+  text-align: center;
+  background-color: aqua;
+}
 
 </style>

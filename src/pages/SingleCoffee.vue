@@ -6,7 +6,9 @@
         <h2>{{ post.rating }}</h2>
         <h2>{{ post.comments }}</h2>
         <router-link to="/">Back to Main Page</router-link>
+        <br>
         <router-link :to="{ path: '/edit', params: { id: post._id } }"><button>Edit Coffee</button></router-link>
+        <br>
         <button v-on:click="deletePost">Delete this Coffee</button>
     </div>
 </template>

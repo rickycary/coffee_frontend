@@ -5,9 +5,10 @@
         v-for="(post, index) in $attrs.posts" 
         v-bind:key="index">
             <router-link :to="{name: 'post', params: {id: index}}">
-                <h1>{{ post.coffeeName }}</h1>
+                <div class="coffeeName">
+                    <h1>{{ post.coffeeName }}</h1>
+                </div>
             </router-link>
-            <!-- Move this to show page later -->
         </div>
     </div>
 </template>
@@ -19,4 +20,8 @@ export default {
 </script>
 
 <style>
+    .post {
+        text-align: center;
+        background-color: aquamarine;
+    }
 </style>
