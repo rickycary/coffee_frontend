@@ -1,6 +1,6 @@
 <template>
 
-    <form v-on:submit.prevent="handleSubmit">
+    <form class="submitForm" v-on:submit.prevent="handleSubmit">
         <input type="text" placeholder="Coffee Name" v-model="coffeeName"/>
         <input type="text" placeholder="Type of Coffee" v-model="typeOfCoffee"/>
         <input type="text" placeholder="Hot or Iced" v-model="hotIce"/>
