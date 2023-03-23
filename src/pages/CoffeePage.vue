@@ -4,8 +4,9 @@
         class="post" 
         v-for="(post, index) in $attrs.posts" 
         v-bind:key="index">
-
-            <h1>{{ post.coffeeName }}</h1>
+            <router-link :to="{name: 'post', params: {id: index}}">
+                <h1>{{ post.coffeeName }}</h1>
+            </router-link>
             <!-- Move this to show page later -->
             <input type="checkbox" v-model="post.completed">
         </div>

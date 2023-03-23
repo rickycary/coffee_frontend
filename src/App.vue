@@ -1,6 +1,7 @@
 <template>
   <nav class="app">
     <h1>All Coffees</h1>
+    <router-link to="/new"><button>Add a Coffee</button></router-link>
     <router-view 
     :posts="posts" 
     :url="url" 
@@ -16,7 +17,7 @@ export default {
   name: "App",
 
   setup(props) {
-    const url = "https://coffee-backend.onrender.com/coffee"
+    const url = "https://coffee-backend.onrender.com/coffee/"
     const posts = ref([])
     const getPosts = async () => {
       try {

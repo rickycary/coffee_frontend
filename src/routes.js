@@ -8,7 +8,7 @@ export default [
     // Show Page
     {path: "/post/:id", component: SingleCoffee, name: "post"},
     // Create Route
-    {path: "/new", component: FormPage},
+    {path: "/new/", component: FormPage},
     // Update Route
-    {path: "/edit", component: FormPage},
+    {path: "/edit/", component: FormPage},
 ]
